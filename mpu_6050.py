@@ -1,5 +1,6 @@
 from mpu6050 import mpu6050
 import time
+#choose your rpi address
 mpu = mpu6050(0x68)
 
 while True:
@@ -18,5 +19,5 @@ while True:
     print("Gyro Z : "+str(gyro_data['z']))
     print()
     print("-------------------------------")
-    time.sleep(1)
+    time.sleep(0.1)
 
